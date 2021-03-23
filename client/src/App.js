@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Search from "./pages/Search";
-import Saved from "./pages/Save";
+import Save from "./pages/Saved";
 
 
 class App extends Component {
@@ -12,7 +12,7 @@ class App extends Component {
         <div>
           <Switch>
             <Route exact path="/" component={Search} />
-            <Route exact path="/saved" component={Saved} />
+            <Route exact path="/saved" component={Save} />
           </Switch>
         </div>
       </Router>

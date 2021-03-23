@@ -18,7 +18,7 @@ export function SearchBtn (props) {
 
     return (
         <div className="row d-flex justify-content-center">
-            <button {...props} className="btn btn-outline-light my-2 my-sm-0 ">Search</button>
+            <button {...props} className="searchBtn btn btn-outline-light my-2 my-sm-0 " style= {{marginBottom: "16%"}}>Search</button>
         </div>
         
     )
