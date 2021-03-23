@@ -7,7 +7,7 @@ function SearchInput(props) {
                 <div>
                     <form className="form-inline">
                       <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"  {...props}/>
-                      <SearchBtn>Search</SearchBtn>
+                      <SearchBtn/>
                     </form>
                 </div>
             </div>
@@ -15,10 +15,10 @@ function SearchInput(props) {
     );
 }
 
-export function SearchBtn ({className, children, onClick }) {
+export function SearchBtn (props) {
 
     return (
-        <button onClick={onClick} className={["btn btn-outline-light my-2 my-sm-0", className].join(" ")}>{children}</button>
+        <button {...props} className="btn btn-outline-light my-2 my-sm-0">Search</button>
     )
 }
 
